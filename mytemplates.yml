@@ -16,3 +16,8 @@
     template:
       src: index.j2
       dest: /var/www/html/index.html
+
+  - name: start the service
+    service:
+      name: apache2
+      state: started
